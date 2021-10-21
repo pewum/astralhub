@@ -1,0 +1,96 @@
+ local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
+
+local s = VLib:Window("Astral Hub", "Version1", "A")
+
+local ss = s:Tab("Universal (under progress)")
+
+ss:Button("F to fly",function()
+print("Pressed!")
+local player = game.Players.LocalPlayer.Character
+
+player.Humanoid.HipHeight = 10  -- Change to any value
+player.Humanoid.JumpPower = 100
+player.Humanoid.WalkSpeed = 100
+end)
+
+
+ss:Slider('JumpPower',0,100,70,function(t)
+print(t)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = (t)
+end)
+
+ss:Slider("WalkSpeed",0,100,70,function(t)
+print(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (t)
+end)
+
+ss:Label('Universal Hubs/Scripts')
+
+ss:Button('Owl Hub',function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+ss:Button('Dark Hub',function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+ss:Button('Domain X',function()
+    loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+end)
+
+ss:Button('NukeVsCity Hub',function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/ALLHACKLOADER/main/NukeHub"))()
+end)
+
+--tab2 down here
+
+local a = s:Tab("Da Hood scripts")
+
+a:Label('Da Hood Scripts')
+
+a:Button('Da Hood Silent aim',function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
+
+Aiming.FOV = 30
+Aiming.ShowFOV = true
+end)
+
+a:Button('Swagmode script',function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+a:Button('Da Hood Faded Script',function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nighter132/Faded/main/YesEpic", true))()
+end)
+
+a:Button('Da Hood TheWare Aimlock Script',function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/coolmanstrongsuperman/lol/main/TheWare"))()
+end)
+
+--tab3 down here
+
+local b = s:Tab("Arsenal")
+
+b:Button('Owl Hub',function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+b:Button('Dark Hub',function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+--tab4 downhere
+
+local c = s:Tab('GPO')
+
+c:Button('DF notifier with OP gui',function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/gpo.lua', true))()
+end)
+
+--tab5 downher 
+
+local d = s:Tab('MM2')
+
+d:Button('MM2 gui',function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
