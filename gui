@@ -2,17 +2,7 @@
 
 local s = VLib:Window("Astral Hub", "Version1", "A")
 
-local ss = s:Tab("Universal (under progress)")
-
-ss:Button("F to fly",function()
-print("Pressed!")
-local player = game.Players.LocalPlayer.Character
-
-player.Humanoid.HipHeight = 10  -- Change to any value
-player.Humanoid.JumpPower = 100
-player.Humanoid.WalkSpeed = 100
-end)
-
+local ss = s:Tab("Universal")
 
 ss:Slider('JumpPower',0,100,70,function(t)
 print(t)
@@ -30,8 +20,8 @@ ss:Button('Owl Hub',function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
 
-ss:Button('Dark Hub',function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+ss:Button('VG Hub',function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
 ss:Button('Domain X',function()
@@ -75,8 +65,8 @@ b:Button('Owl Hub',function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
 
-b:Button('Dark Hub',function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+b:Button('VG Hub',function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
 --tab4 downhere
