@@ -84,3 +84,11 @@ local d = s:Tab('MM2')
 d:Button('MM2 gui',function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
 end)
+
+--new tab6
+
+local d = s:Tab('Phantom Forces')
+
+d:Button('Phantom Forces gui',function()
+    loadstring(game:HttpGet("https://ehub.fun/raw/script.lua"))()
+end)
